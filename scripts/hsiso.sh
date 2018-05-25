@@ -10,15 +10,15 @@
  hdiutil attach /tmp/HighSierra.cdr.dmg -noverify -nobrowse -mountpoint /Volumes/install_build
  
  # Restore the Base System into the HighSierra Blank ISO Image
- asr restore -source /Volumes/install_app/BaseSystem.dmg -target /Volumes/install_build -noprompt -noverify -erase
+ asr restore -source /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/BaseSystem.dmg  -target /Volumes/install_build -noprompt -noverify -erase
  
  # Remove Package link and replace with actual files
  rm /Volumes/OS\ X\ Base\ System/System/Installation/Packages
  cp -rp /Volumes/install_app/Packages /Volumes/OS\ X\ Base\ System/System/Installation/
  
  # Copy High Sierra installer dependencies
- cp -rp /Volumes/install_app/BaseSystem.chunklist /Volumes/OS\ X\ Base\ System/BaseSystem.chunklist
- cp -rp /Volumes/install_app/BaseSystem.dmg /Volumes/OS\ X\ Base\ System/BaseSystem.dmg
+ cp -rp /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/BaseSystem.chunklist /Volumes/OS\ X\ Base\ System/BaseSystem.chunklist
+ cp -rp /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/BaseSystem.dmg /Volumes/OS\ X\ Base\ System/BaseSystem.dmg
  
  # Unmount the installer image
  hdiutil detach /Volumes/install_app
@@ -31,5 +31,6 @@
  
  # Rename the HighSierra ISO Image and move it to the desktop
  mv /tmp/HighSierra.iso.cdr ~/Desktop/HighSierra.iso
+
  # delete iso in /tmp
  rm /tmp/HighSierra.cdr.dmg
