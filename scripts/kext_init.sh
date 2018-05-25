@@ -1,5 +1,4 @@
 # get all of the kext sources
-mkdir ~/git
 cd ~/git/
 git clone https://github.com/corpnewt/Lilu-and-Friends.git
 cd Lilu-and-Friends
