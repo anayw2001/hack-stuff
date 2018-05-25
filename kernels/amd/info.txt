@@ -1,1 +1,0 @@
-AMD kernels live here

@@ -1,0 +1,2 @@
+setup/MacOSX10.10.sdk.zip filter=lfs diff=lfs merge=lfs -text
+setup/MacOSX10.11.sdk.zip filter=lfs diff=lfs merge=lfs -text

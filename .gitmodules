@@ -1,0 +1,3 @@
+[submodule "vmtools/unlocker"]
+	path = vmtools/unlocker
+	url = https://github.com/DrDonk/unlocker.git

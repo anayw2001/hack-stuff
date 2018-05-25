@@ -1,1 +1,0 @@
-EFI Drivers live here (NTFS.efi, HFS+.efi, etc.)
